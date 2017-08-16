@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <title></title>
+     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+   </head>
+   <body>
+   <h2>Individual Page</h2>
+
+
+     <div id="entry-wrapper">
+
+    <a href="/users/{{username}}">
+      <div class="robotBox">
+        <img class="robotAvatar" src="{{avatar}}" alt="">
+        <h1>{{name}}</h1>
+        {{#job}}
+        <p>{{job}}</p>
+        <p>{{company}}</p>
+        {{/job}}
+        {{^job}}
+        <p class="a">Available for hire</p>
+        {{/job}}
+      </div></a>
+
+  </div>
+   </body>
+ </html>
