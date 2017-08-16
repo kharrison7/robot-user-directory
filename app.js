@@ -11,6 +11,8 @@ console.log("App is running");
 app.engine('mustache', mustacheExpress());
 app.set('views', './views');
 app.set('view engine', 'mustache');
+app.use(express.static(__dirname + '/public'));
+
 // app.set('views', __dirname + '/views');
 
   console.log(data.users[1].id);
@@ -18,12 +20,12 @@ app.set('view engine', 'mustache');
 
 //Listening on root
 
-app.get('/users/', function(req, res){
+app.get('/users', function(req, res){
   res.render('users', data)});
 
 
 
-app.get('/users/', function (req, res) {
+app.get('/users', function (req, res) {
   // console.log(req.additions);
   //This will print the array of values.
   res.render('users.mustache',  {text1: "A Robot Directory"
