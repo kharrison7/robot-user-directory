@@ -13,7 +13,7 @@ app.set('views', './views');
 app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
 
-  console.log(dataSet);
+  console.log(dataSet.users[1].id);
 
 //Listening on root
 app.get('/todo/', function (req, res) {
@@ -21,7 +21,9 @@ app.get('/todo/', function (req, res) {
 
   // TODO write your code here
   res.render('todo.mustache',  {text1: "A Robot Directory",
-                                text2: dataSet
+                                text2: dataSet.users[1].id,
+                                text3: dataSet.users[1].name,
+                                text4: dataSet.users[1].avatar
                                }
  );
 });
