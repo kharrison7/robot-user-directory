@@ -11,6 +11,8 @@ console.log("App is running");
 app.engine('mustache', mustacheExpress());
 app.set('views', './views');
 app.set('view engine', 'mustache');
+
+// This pulls in the public file to help find the css.
 app.use(express.static(__dirname + '/public'));
 
 // app.set('views', __dirname + '/views');
