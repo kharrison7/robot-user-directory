@@ -1,0 +1,26 @@
+{
+  "name": "robot-user-directory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kharrison7/robot-user-directory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kharrison7/robot-user-directory/issues"
+  },
+  "homepage": "https://github.com/kharrison7/robot-user-directory#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mustache": "^2.3.0",
+    "mustache-express": "^1.2.5"
+  }
+}
