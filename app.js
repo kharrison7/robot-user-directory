@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const mustacheExpress = require('mustache-express');
 const dataSet = require('./items.js');
+const filtered = require('./main.js');
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -14,6 +15,7 @@ app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
 
   console.log(dataSet.users[1].id);
+  console.log(dataSet.users[1]);
 
 //Listening on root
 app.get('/todo/', function (req, res) {
@@ -21,9 +23,10 @@ app.get('/todo/', function (req, res) {
 
   // TODO write your code here
   res.render('todo.mustache',  {text1: "A Robot Directory",
-                                 "unit": [{text2: dataSet.users[1].id,
+                                 "unit": [{text2: dataSet.users[1].job,
                                 text3: dataSet.users[1].name,
-                                text4: dataSet.users[1].avatar
+                                text4: dataSet.users[1].avatar,
+                                text5: dataSet.users[1].company
                               }]}
  );
 });
