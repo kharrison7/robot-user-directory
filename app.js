@@ -20,7 +20,8 @@ app.get('/todo/', function (req, res) {
   console.log(req.additions); //This will print the array of values.
 
   // TODO write your code here
-  res.render('todo.mustache',  {text1: "A Robot Directory"
+  res.render('todo.mustache',  {text1: "A Robot Directory",
+                                text2: dataSet
                                }
  );
 });
