@@ -1,20 +1,20 @@
-
+/*This styles the hireMe text*/
 .hireMe {
-color: blue;
+color: red;
 }
-
+/*This styles the box for each robot.*/
 .robotBox {
  height: 140pt;
  width: 140pt;
  border: 1pt solid green;
 }
-
+/*This styles the robot image.*/
 .robotAvatar {
   height: 90pt;
   width: 90pt;
 }
-
+/*This styles the p elements.*/
 p {
 font-size: 5pt;
-color: red;
+color: blue;
 }

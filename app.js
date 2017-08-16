@@ -2,11 +2,11 @@ const express = require('express');
 const path = require('path');
 const mustacheExpress = require('mustache-express');
 const data = require('./items.js');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 
 const app = express();
 
-console.log("App is running");
+// console.log("App is running");
 
 app.engine('mustache', mustacheExpress());
 app.set('views', './views');
@@ -17,8 +17,8 @@ app.use(express.static(__dirname + '/public'));
 
 // app.set('views', __dirname + '/views');
 
-  console.log(data.users[1].id);
-  console.log(data.users[1]);
+  // console.log(data.users[1].id);
+  // console.log(data.users[1]);
 
 //Listening on root
 
@@ -27,10 +27,19 @@ app.get('/users', function(req, res){
 
 
 
-app.get('/users', function (req, res) {
-  // console.log(req.additions);
-  //This will print the array of values.
-  res.render('users.mustache',  {text1: "A Robot Directory"
+
+
+  // app.get('/users/:id', function(req, res){
+  //   res.render('Hello there, ' + req.params.name + '!');
+  //   console.log('Something');
+  // });
+  //
+
+
+// app.get('/users', function (req, res) {
+//   // console.log(req.additions);
+//   //This will print the array of values.
+//   res.render('users.mustache',  {text1: "A Robot Directory"
                             //      "unit": [{text2: dataSet.users[1].job,
                             //     text3: dataSet.users[1].name,
                             //     text4: dataSet.users[1].avatar,
@@ -43,9 +52,9 @@ app.get('/users', function (req, res) {
                             //   }
                             //
                             // ]
-                          }
- );
-});
+//                           }
+//  );
+// });
 
 app.listen(3000, function () {
   console.log('Successfully started express application!');
