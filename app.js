@@ -21,10 +21,10 @@ app.get('/todo/', function (req, res) {
 
   // TODO write your code here
   res.render('todo.mustache',  {text1: "A Robot Directory",
-                                text2: dataSet.users[1].id,
+                                 "unit": [{text2: dataSet.users[1].id,
                                 text3: dataSet.users[1].name,
                                 text4: dataSet.users[1].avatar
-                               }
+                              }]}
  );
 });
 
