@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 const mustacheExpress = require('mustache-express');
 const data = require('./items.js');
-// const filtered = require('./main.js');
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -24,25 +23,25 @@ app.get('/users/', function(req, res){
 
 
 
-// app.get('/todo/', function (req, res) {
-//   console.log(req.additions); //This will print the array of values.
-//
-//   // TODO write your code here
-//   res.render('todo.mustache',  {text1: "A Robot Directory",
-//                                  "unit": [{text2: dataSet.users[1].job,
-//                                 text3: dataSet.users[1].name,
-//                                 text4: dataSet.users[1].avatar,
-//                                 text5: dataSet.users[1].company
-//                               },
-//                               {text2: dataSet.users[2].job,
-//                               text3: dataSet.users[2].name,
-//                               text4: dataSet.users[2].avatar,
-//                               text5: dataSet.users[2].company
-//                               }
-//
-//                             ]}
-//  );
-// });
+app.get('/users/', function (req, res) {
+  // console.log(req.additions);
+  //This will print the array of values.
+  res.render('users.mustache',  {text1: "A Robot Directory"
+                            //      "unit": [{text2: dataSet.users[1].job,
+                            //     text3: dataSet.users[1].name,
+                            //     text4: dataSet.users[1].avatar,
+                            //     text5: dataSet.users[1].company
+                            //   },
+                            //   {text2: dataSet.users[2].job,
+                            //   text3: dataSet.users[2].name,
+                            //   text4: dataSet.users[2].avatar,
+                            //   text5: dataSet.users[2].company
+                            //   }
+                            //
+                            // ]
+                          }
+ );
+});
 
 app.listen(3000, function () {
   console.log('Successfully started express application!');
