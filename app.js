@@ -30,7 +30,7 @@ app.get('/users', function(req, res){
 
   let thisIndividual = data.users.filter(function( obj ) {
     // console.log("This username: " + obj.username);
-  
+
 
     if (obj.username == req.params.username)
     return obj.username;

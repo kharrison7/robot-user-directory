@@ -6,23 +6,33 @@
      <link rel="stylesheet" type="text/css" href="/css/styles.css" />
    </head>
    <body>
-   <h2>Individual Page</h2>
+   <!-- <h2>Individual Page</h2> -->
 
 
-     <div id="entry-wrapper">
+     <div id="individual-entry">
 
     <a href="/users/{{username}}">
       <div class="robotBox">
         <img class="robotAvatar" src="{{avatar}}" alt="">
-        <h1>{{name}}</h1>
+        <h6>{{name}}</h6>
         {{#job}}
-        <p>{{job}}</p>
-        <p>{{company}}</p>
+        <p>{{address.city}} {{address.country}} | {{job}}, {{company}}</p>
         {{/job}}
         {{^job}}
-        <p class="a">Available for hire</p>
+        <span><p>{{address.city}} {{address.country}} | <p class ="a">Available for Hire</p></span>
         {{/job}}
       </div></a>
+      <p>{{email}} | {{phone}}</p>
+      <p>Education:</p>
+      {{#university}}
+      <p>{{.}}</p>
+      {{/university}}
+      <p>Skills</p>
+      {{#skills}}
+        <li>{{.}}</li>
+      {{/skills}}
+      <br>
+      <a href="/users/">Back to Robot Directory</a>
 
   </div>
    </body>

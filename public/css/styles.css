@@ -1,20 +1,76 @@
+/*This controls the box with all the profiles.*/
+.flexHere{
+display: flex;
+justify-content: space-around;
+align-items: center;
+align-content: space-around;
+/*width: 900pt;*/
+width: 100%;
+flex-wrap: wrap;
+background-color: #E0F2F7;
+}
 /*This styles the hireMe text*/
 .hireMe {
-color: red;
+color: #FF0000;
 }
 /*This styles the box for each robot.*/
 .robotBox {
- height: 140pt;
- width: 140pt;
- border: 1pt solid green;
+ height: 120pt;
+ width: 120pt;
+ border: 1pt solid #E6E6E6;
+ margin: 10pt;
+ background-color: #EFFBF8;
+ /*text-align: center;*/
+ /*display: flex;
+ justify-content: center;
+ align-items: center;*/
 }
 /*This styles the robot image.*/
 .robotAvatar {
-  height: 90pt;
-  width: 90pt;
+  height: 70pt;
+  width: 80pt;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*This styles the p elements.*/
 p {
-font-size: 5pt;
-color: blue;
+margin-left: 5pt;
+font-size: 8pt;
+color: #2E2E2E;
+/*text-decoration: inherit;*/
+text-decoration: none;
+}
+
+/*This styles the skills list.*/
+li {
+  font-size: 10pt;
+  color: #2E2E2E;
+  text-decoration: inherit;
+}
+/*This styles the name.*/
+h6 {
+
+color: #5882FA;
+font-size: 12pt;
+margin: 0pt;
+padding: 0pt;
+margin-left: 5pt;
+text-decoration: inherit;
+}
+/*This removes the underlines for a elements and adds hover effects.*/
+a {
+  text-decoration: none;
+}
+a:hover {
+    color: #A9F5F2;
+    text-decoration: underline;
+}
+a:active {
+    color: #9FF781;
+}
+
+/*This styles the h1.*/
+h1 {
+color: #424242;
 }
