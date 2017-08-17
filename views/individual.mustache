@@ -7,33 +7,45 @@
    </head>
    <body>
    <!-- <h2>Individual Page</h2> -->
-
-
      <div id="individual-entry">
-
     <a href="/users/{{username}}">
-      <div class="robotBox">
-        <img class="robotAvatar" src="{{avatar}}" alt="">
-        <h6>{{name}}</h6>
+      <div class="robotBoxIndividual">
+        <img class="robotAvatarCircle" src="{{avatar}}" alt="">
+        <div class="individualTop">
+        <h5>{{name}}</h5>
+        <div class="allButName">
         {{#job}}
         <p>{{address.city}} {{address.country}} | {{job}}, {{company}}</p>
         {{/job}}
         {{^job}}
-        <span><p>{{address.city}} {{address.country}} | <p class ="a">Available for Hire</p></span>
+        <p>{{address.city}} {{address.country}} | <p class ="a">Available for Hire</p>
         {{/job}}
       </div></a>
       <p>{{email}} | {{phone}}</p>
-      <p>Education:</p>
-      {{#university}}
-      <p>{{.}}</p>
-      {{/university}}
+         </div>
+     </div>
+    </div></a>
+
+   <div class="bottomBox">
+     <div class="leftBox">
+      <p>Education</p>
       <p>Skills</p>
+    </div>
+    <div class="rightBox">
+      <br />
+      {{#university}}
+      <p>  </p>
+      <p class="edu">{{.}}</p>
+      {{/university}}
       {{#skills}}
-        <li>{{.}}</li>
+        <ul>{{.}}</ul>
       {{/skills}}
+    </div>
+  </div>
+
       <br>
       <a href="/users/">Back to Robot Directory</a>
-
   </div>
+
    </body>
  </html>

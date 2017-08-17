@@ -4,14 +4,9 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 align-content: space-around;
-/*width: 900pt;*/
 width: 100%;
 flex-wrap: wrap;
 background-color: #E0F2F7;
-}
-/*This styles the hireMe text*/
-.hireMe {
-color: #FF0000;
 }
 /*This styles the box for each robot.*/
 .robotBox {
@@ -20,10 +15,6 @@ color: #FF0000;
  border: 1pt solid #E6E6E6;
  margin: 10pt;
  background-color: #EFFBF8;
- /*text-align: center;*/
- /*display: flex;
- justify-content: center;
- align-items: center;*/
 }
 /*This styles the robot image.*/
 .robotAvatar {
@@ -34,14 +25,19 @@ color: #FF0000;
     margin-right: auto;
 }
 /*This styles the p elements.*/
-p {
+.jobs {
 margin-left: 5pt;
 font-size: 8pt;
 color: #2E2E2E;
-/*text-decoration: inherit;*/
 text-decoration: none;
 }
-
+/*This styles the hireMe text*/
+.hireMe {
+margin-left: 5pt;
+font-size: 8pt;
+text-decoration: none;
+color: #FF0000;
+}
 /*This styles the skills list.*/
 li {
   font-size: 10pt;
@@ -50,7 +46,6 @@ li {
 }
 /*This styles the name.*/
 h6 {
-
 color: #5882FA;
 font-size: 12pt;
 margin: 0pt;
@@ -58,7 +53,7 @@ padding: 0pt;
 margin-left: 5pt;
 text-decoration: inherit;
 }
-/*This removes the underlines for a elements and adds hover effects.*/
+/*These remove the underlines for a elements and adds hover effects.*/
 a {
   text-decoration: none;
 }
@@ -69,8 +64,67 @@ a:hover {
 a:active {
     color: #9FF781;
 }
-
 /*This styles the h1.*/
 h1 {
 color: #424242;
+}
+
+
+
+/*This controls the circular image*/
+.robotAvatarCircle {
+  height: 90pt;
+  width: 90pt;
+  border-radius: 50%;
+  /*display: block;
+    margin-left: auto;
+    margin-right: auto;*/
+  background-color: #E0F2F7;
+  border: 1pt solid #E6E6E6;
+  float: left;
+}
+/*This controls the individual profile upper portion.*/
+.robotBoxIndividual{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: #E0ECF8;
+}
+/*This controls the individual profile upper right portion.*/
+.individualTop{
+/*float: right;*/
+}
+/*This controls the individual profile name.*/
+h5 {
+  color: #5882FA;
+  font-size: 20pt;
+  margin: 0pt;
+  padding: 0pt;
+  margin-left: 0pt;
+  text-decoration: inherit;
+}
+/*This controls the individual profile bottom left.*/
+.leftBox {
+float: left;
+font-size: 10pt;
+margin-right: 25px;
+text-align: right;
+padding: 0pt;
+font-weight: bold;
+line-height: 90%;
+height: 90pt;
+}
+
+/*This controls the individual profile bottom right.*/
+.rightBox{
+  margin-top: 10pt;
+  font-size: 8pt;
+  line-height: 60%;
+}
+/*This controls the edu output styling.*/
+.edu {
+margin-top: 5pt;
 }

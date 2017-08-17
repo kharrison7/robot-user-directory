@@ -19,16 +19,14 @@
           <h1>Index: {{text1}}</h1>
            <!-- <br /> -->
            <hr />
-
        <div class="flexHere">
-
            {{#users}}
         <a href="/users/{{username}}"> <div class="robotBox" id="{{id}}">
                 <img class="robotAvatar" src="{{avatar}}">
                 <h6>{{name}}</h6>
                 <!-- <p></p> -->
                 {{#job}}
-                <p>{{job}}, {{company}}</p>
+                <p class="jobs">{{job}}, {{company}}</p>
                 {{/job}}
                 {{^job}}
                 <p class="hireMe">Available for hire</p>
@@ -36,11 +34,9 @@
              </div></a>
            {{/users}}
             </div>
-
         </div>
       </div>
     </div>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
